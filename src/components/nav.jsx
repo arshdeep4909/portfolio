@@ -19,9 +19,12 @@ const Nav = () => {
 
 const NavBar = styled.nav`
   display: flex;
+  margin: 0;
+  height: 7vh;
   font-family: "Grape Nuts", cursive;
   justify-content: space-between;
-  background-image: url("https://wallpapertag.com/wallpaper/full/8/4/6/252350-free-black-textured-background-2560x1600-for-samsung.jpg");
+  align-items: center;
+  background-color: #080808;
 `;
 const Logo = styled.div`
   p {
@@ -36,13 +39,13 @@ const Logo = styled.div`
   }
   p:hover {
     cursor: pointer;
-    color: #f8735b;
-    font-weight: bold;
+    color: #9adcf0;
   }
 `;
 
 const NavList = styled.ul`
   display: flex;
+  align-items: center;
   padding-top: 6px;
   height: 100%;
   list-style: none;
@@ -53,7 +56,7 @@ const NavList = styled.ul`
     margin-right: 3rem;
     &:hover {
       cursor: pointer;
-      color: tomato;
+      color: #9adcf0;
     }
   }
 `;
