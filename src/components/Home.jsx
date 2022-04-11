@@ -20,7 +20,10 @@ const Home = () => {
           </button>
         </Buttons>
         <ScrollButton>
-          <FaAngleDown />
+          <p>Scroll down</p>
+          <div>
+            <FaAngleDown />
+          </div>
         </ScrollButton>
       </Main>
     </>
@@ -71,23 +74,32 @@ const Buttons = styled.div`
 `;
 
 const ScrollButton = styled.button`
+  display: flex;
+  margin-top: 15rem;
+  justify-content: center;
+  align-items: center;
   background: transparent;
   border: none;
   color: green;
-  font-size: 30px;
-  height: 40px;
-  width: 40px;
-  position: relative;
-  top: 730px;
-  right: 30px;
-  text-align: center;
-  padding: 15px;
-  transition: all 0.3s ease;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  p {
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+  }
   &:hover {
     cursor: pointer;
   }
   &:focus {
-    top: 750px;
+    div {
+      position: relative;
+      top: 5px;
+    }
+  }
+  div {
+    display: flex;
+    align-items: center;
   }
 `;
 export default Home;

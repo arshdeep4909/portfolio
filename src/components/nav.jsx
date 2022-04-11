@@ -1,20 +1,35 @@
+import React, { useState } from "react";
+
 import styled from "styled-components";
 import background from "../image/background.webp";
+import { FaAlignJustify } from "react-icons/fa";
+import NavList from "./NavList";
 
 const Nav = () => {
+  const [expandNav, setExpandNav] = useState(false);
+  //Event Handlers
+  const ExpandNavHandler = (state) => {
+    setExpandNav(!state);
+  };
   return (
-    <NavBar>
-      <Logo>
-        <p href="#">Dev</p>
-      </Logo>
-      <NavList>
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Resume</li>
-        <li>Contact</li>
-      </NavList>
-    </NavBar>
+    <>
+      <NavBar>
+        <Logo>
+          <p href="#">Dev</p>
+        </Logo>
+        <NavToggle>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Resume</li>
+          <li>Contact</li>
+        </NavToggle>
+        <ToggleButton onClick={() => ExpandNavHandler(expandNav)}>
+          <FaAlignJustify />
+        </ToggleButton>
+      </NavBar>
+      {expandNav && <NavList />}
+    </>
   );
 };
 
@@ -22,13 +37,14 @@ const NavBar = styled.nav`
   display: flex;
   margin: 0;
   height: 7vh;
-  font-family: "Grape Nuts", cursive;
   justify-content: space-between;
   align-items: center;
   background-color: #080808;
 `;
+
 const Logo = styled.div`
   p {
+    font-family: "Grape Nuts", cursive;
     text-decoration: none;
     border: none;
     border-radius: 2rem;
@@ -44,8 +60,10 @@ const Logo = styled.div`
   }
 `;
 
-const NavList = styled.ul`
-  display: flex;
+const NavToggle = styled.ul`
+  display: none;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
   align-items: center;
   padding-top: 6px;
   height: 100%;
@@ -55,10 +73,32 @@ const NavList = styled.ul`
   font-weight: lighter;
   li {
     margin-right: 3rem;
+    font-size: 1rem;
+
     &:hover {
       cursor: pointer;
       color: #9adcf0;
     }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+`;
+const ToggleButton = styled.button`
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  border: none;
+  font-size: 30px;
+  display: none;
+  background: transparent;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
   }
 `;
 
