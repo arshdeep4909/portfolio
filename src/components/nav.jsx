@@ -8,6 +8,7 @@ const Nav = () => {
         <p href="#">Dev</p>
       </Logo>
       <NavList>
+        <li>Home</li>
         <li>About</li>
         <li>Projects</li>
         <li>Resume</li>
