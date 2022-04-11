@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import { FaGithub, FaLinkedin, FaInbox, FaAngleDown } from "react-icons/fa";
-
+import { FaGithub, FaLinkedin, FaAngleDown } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 const Home = () => {
   return (
     <>
       <Main>
         <p> ── HELLO THERE</p>
-        <h2>I am Arshdeep Singh.</h2>
-        <h2>I am a Front-End Developer.</h2>
+        <h1>I am Arshdeep Singh.</h1>
+        <h1>I am a Front-End Developer.</h1>
         <Buttons>
           <button>
             <FaGithub />
@@ -16,7 +16,7 @@ const Home = () => {
             <FaLinkedin />
           </button>
           <button>
-            <FaInbox />
+            <SiGmail />
           </button>
         </Buttons>
         <ScrollButton>
@@ -34,7 +34,7 @@ const Main = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 93vh;
+  min-height: 93vh;
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
@@ -45,7 +45,7 @@ const Main = styled.div`
     color: #9adcf0;
     padding: 2rem;
   }
-  h2 {
+  h1 {
     font-size: 2.5rem;
     /* padding: 2rem; */
   }
@@ -75,7 +75,7 @@ const Buttons = styled.div`
 
 const ScrollButton = styled.button`
   display: flex;
-  margin-top: 15rem;
+  margin-top: 5rem;
   justify-content: center;
   align-items: center;
   background: transparent;

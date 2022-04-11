@@ -15,7 +15,7 @@ const Nav = () => {
     <>
       <NavBar>
         <Logo>
-          <p href="#">Dev</p>
+          <p href="#">DEV </p>
         </Logo>
         <NavToggle>
           <li>Home</li>
@@ -36,7 +36,7 @@ const Nav = () => {
 const NavBar = styled.nav`
   display: flex;
   margin: 0;
-  height: 7vh;
+  min-height: 7vh;
   justify-content: space-between;
   align-items: center;
   background-color: #080808;
@@ -48,9 +48,10 @@ const Logo = styled.div`
     text-decoration: none;
     border: none;
     border-radius: 2rem;
-    font-size: 3rem;
-    padding: 1px 10px;
-    margin: 1rem 3rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 1px 5px;
+    margin: 1rem 2rem;
     color: white;
     transition: all 0.3s ease;
   }
