@@ -79,6 +79,7 @@ const ScrollButton = styled.button`
   width: 40px;
   position: relative;
   top: 730px;
+  right: 30px;
   text-align: center;
   padding: 15px;
   transition: all 0.3s ease;
