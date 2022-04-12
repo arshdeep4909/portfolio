@@ -65,7 +65,7 @@ function Contact() {
 }
 
 const ContactForm = styled.div`
-  max-width: 1800px;
+  max-width: 1600px;
   margin: auto;
   text-align: center;
   h2 {
@@ -84,7 +84,7 @@ const ContactForm = styled.div`
 const ContactGrid = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 4rem 20vw;
+  margin: 4rem;
   form {
     display: flex;
     flex-direction: column;

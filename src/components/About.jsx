@@ -43,7 +43,7 @@ function About() {
 }
 
 const AboutSection = styled.div`
-  max-width: 1800px;
+  max-width: 1600px;
   margin: auto;
 
   h2 {
@@ -64,9 +64,8 @@ const AboutSection = styled.div`
 
 const Info = styled.div`
   display: grid;
-  width: 80%;
   grid-template-columns: 2fr 1fr;
-  margin: 4rem 20vw;
+  margin: 4rem 4rem 0 4rem;
   p {
     margin-top: 10px;
   }

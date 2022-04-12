@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import styled from "styled-components";
-import background from "../image/background.webp";
 import { FaAlignJustify } from "react-icons/fa";
 import NavList from "./NavList";
 
