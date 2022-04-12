@@ -104,6 +104,10 @@ const Info = styled.div`
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    margin: 2rem;
+    button {
+      width: 130px;
+    }
   }
 `;
 
@@ -118,6 +122,13 @@ const Skills = styled.div`
     padding: 5px;
     text-transform: uppercase;
     font-weight: bold;
+  }
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    h3 {
+      margin: 10px 0;
+    }
   }
 `;
 

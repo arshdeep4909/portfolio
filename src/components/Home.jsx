@@ -5,9 +5,11 @@ const Home = () => {
   return (
     <>
       <Main>
-        <p> ── HELLO THERE</p>
-        <h1>I am Arshdeep Singh.</h1>
-        <h1>I am a Front-End Developer.</h1>
+        <div className="margin">
+          <p> ── HELLO THERE</p>
+          <h1>I am Arshdeep Singh.</h1>
+          <h1>I am a Front-End Developer.</h1>
+        </div>
         <Buttons>
           <button>
             <FaGithub />
@@ -52,6 +54,11 @@ const Main = styled.div`
   background-image: url("https://images.unsplash.com/photo-1595214134789-84fd51be3fb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80");
   background-size: cover;
   background-repeat: no-repeat;
+  @media screen and (max-width: 768px) {
+    .margin {
+      margin: 2rem;
+    }
+  }
 `;
 
 const Buttons = styled.div`

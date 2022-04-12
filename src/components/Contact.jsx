@@ -53,12 +53,12 @@ function Contact() {
             Send
           </button>
         </form>
-        <Info>
+        <div>
           <h3>Phone</h3>
           <p>(647) 295 4632</p>
           <h3>Email</h3>
           <p>arshdeep4909@gmai.com</p>
-        </Info>
+        </div>
       </ContactGrid>
     </ContactForm>
   );
@@ -90,12 +90,12 @@ const ContactGrid = styled.div`
     flex-direction: column;
     margin-right: 40px;
     input {
-      width: 400px;
+      /* width: 400px; */
       height: 30px;
       margin: 10px;
     }
     textarea {
-      width: 400px;
+      /* width: 400px; */
       height: 80px;
       margin: 10px;
     }
@@ -121,9 +121,12 @@ const ContactGrid = styled.div`
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 0;
+    form {
+      margin: 2rem;
+    }
   }
 `;
-
-const Info = styled.div``;
 
 export default Contact;
