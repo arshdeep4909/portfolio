@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaGithub, FaLinkedin, FaAngleDown } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import background from "../image/background.png";
 const Home = () => {
   return (
     <>
@@ -51,7 +52,7 @@ const Main = styled.div`
     font-size: 2.5rem;
     /* padding: 2rem; */
   }
-  background-image: url("https://images.unsplash.com/photo-1595214134789-84fd51be3fb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80");
+  background-image: url(${background});
   background-size: cover;
   background-repeat: no-repeat;
   @media screen and (max-width: 768px) {
