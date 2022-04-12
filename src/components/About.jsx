@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { SiGmail } from "react-icons/si";
-
+import { CgMail } from "react-icons/cg";
 function About() {
   return (
     <AboutSection>
@@ -22,7 +21,7 @@ function About() {
             chat. Feel free to contact me.
           </p>
           <button>
-            <SiGmail className="mail-button" />
+            <CgMail className="mail-button" />
             Get in Touch
           </button>
         </div>
@@ -75,19 +74,31 @@ const Info = styled.div`
     margin-right: 40px;
 
     button {
-      background-color: transparent;
-      border: 1px solid lightgray;
+      display: flex;
+      align-items: center;
+      background-color: black;
+      color: white;
+      border: 2px solid black;
       border-radius: 5px;
       padding: 5px;
       margin: 20px 0;
       text-align: center;
+      transition: all 0.3s ease;
       .mail-button {
-        margin: 3px 5px 0 0;
-        color: #292929;
+        margin: 0px 8px 0 0;
+        font-size: 20px;
+        color: white;
+        background: transparent;
+        transition: all 0.3s ease;
       }
       &:hover {
         cursor: pointer;
-        opacity: 0.8;
+        background: white;
+        color: black;
+        font-weight: bold;
+        .mail-button {
+          color: black;
+        }
       }
     }
   }
