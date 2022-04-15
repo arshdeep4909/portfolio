@@ -19,10 +19,42 @@ const GlobalStyle = createGlobalStyle`
     text-transform: uppercase;
     font-size: 2rem;
   }
+ 
   .semi-heading {
     font-weight: bold;
     font-size: 1.4rem;
   }
+
+
+.ScrollButton{
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: green;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  p {
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    div {
+      position: relative;
+      top: 5px;
+    }
+  }
+  div {
+    display: flex;
+    align-items: center;
+  }
+}
 
 `;
 

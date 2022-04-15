@@ -22,12 +22,12 @@ const Home = () => {
             <SiGmail />
           </button>
         </Buttons>
-        <ScrollButton>
+        <div className="ScrollButton">
           <p>Scroll down</p>
           <div>
             <FaAngleDown />
           </div>
-        </ScrollButton>
+        </div>
       </Main>
     </>
   );
@@ -85,33 +85,4 @@ const Buttons = styled.div`
   }
 `;
 
-const ScrollButton = styled.button`
-  display: flex;
-  margin-top: 5rem;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  border: none;
-  color: green;
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
-  p {
-    text-transform: uppercase;
-    color: white;
-    font-size: 13px;
-  }
-  &:hover {
-    cursor: pointer;
-  }
-  &:focus {
-    div {
-      position: relative;
-      top: 5px;
-    }
-  }
-  div {
-    display: flex;
-    align-items: center;
-  }
-`;
 export default Home;

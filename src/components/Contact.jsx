@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
+import { FaAngleUp } from "react-icons/fa";
 
 function Contact() {
   //Event Handler
@@ -58,8 +59,18 @@ function Contact() {
           <p>(647) 295 4632</p>
           <h3>Email</h3>
           <p>arshdeep4909@gmai.com</p>
+          <h3>Address</h3>
+          <p>23 Amherst Dr.</p>
+          <p>Kitchener Ontario Canada</p>
+          <p>N2P 1C9</p>
         </div>
       </ContactGrid>
+      <div className="top-scroll">
+        <p>Back to Top </p>
+        <button className="ScrollButton">
+          <FaAngleUp />
+        </button>
+      </div>
     </ContactForm>
   );
 }
@@ -71,12 +82,28 @@ const ContactForm = styled.div`
   h2 {
     margin-top: 6rem;
   }
+  .top-scroll {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 25px;
+    margin-top: 30px;
+    p {
+      margin-right: 15px;
+    }
+    button {
+      margin: 0;
+    }
+  }
 `;
 
 const ContactGrid = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin: 4rem;
+  h3 {
+    margin-top: 5px;
+  }
   form {
     display: flex;
     flex-direction: column;
@@ -91,6 +118,7 @@ const ContactGrid = styled.div`
       height: 80px;
       margin: 10px;
     }
+
     button {
       width: 70px;
       border-radius: 5px;

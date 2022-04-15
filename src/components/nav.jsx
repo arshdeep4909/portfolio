@@ -33,9 +33,13 @@ const Nav = () => {
 };
 
 const NavBar = styled.nav`
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
   display: flex;
   margin: 0;
-  min-height: 7vh;
+  height: 55px;
   justify-content: space-between;
   align-items: center;
   background-color: #080808;
@@ -86,7 +90,7 @@ const NavToggle = styled.ul`
 `;
 const ToggleButton = styled.button`
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 40px;
   color: white;
   border: none;

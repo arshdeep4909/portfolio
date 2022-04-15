@@ -15,6 +15,15 @@ function NavList() {
   );
 }
 
+const Navlist = styled.div`
+  margin-top: 55px;
+  display: none;
+  color: white;
+  background-color: #080808;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+`;
 const List = styled.ul`
   display: flex;
   flex-direction: column;
@@ -35,15 +44,6 @@ const List = styled.ul`
       background-color: white;
       color: #080808;
     }
-  }
-`;
-
-const Navlist = styled.div`
-  display: none;
-  color: white;
-  background-color: #080808;
-  @media screen and (max-width: 768px) {
-    display: block;
   }
 `;
 
