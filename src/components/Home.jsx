@@ -47,6 +47,7 @@ const Main = styled.div`
     margin: 0;
     color: #9adcf0;
     padding: 2rem;
+    text-align: center;
   }
   h1 {
     font-size: 2.5rem;
@@ -58,6 +59,9 @@ const Main = styled.div`
   @media screen and (max-width: 768px) {
     .margin {
       margin: 2rem;
+    }
+    p {
+      text-align: inherit;
     }
   }
 `;

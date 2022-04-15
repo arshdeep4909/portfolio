@@ -5,7 +5,7 @@ function About() {
   return (
     <AboutSection>
       <h2>About</h2>
-      <p className="about-heading">Personal Info</p>
+      <p className="semi-heading">Personal Info</p>
       <Info>
         <div className="hello">
           <h3>Hello!</h3>
@@ -43,19 +43,9 @@ function About() {
 }
 
 const AboutSection = styled.div`
-  max-width: 1600px;
+  max-width: 1400px;
   margin: auto;
 
-  h2 {
-    margin-top: 50px;
-    color: #9adcf0;
-    text-transform: uppercase;
-    font-size: 2rem;
-  }
-  .about-heading {
-    font-weight: bold;
-    font-size: 1.4rem;
-  }
   display: flex;
   flex-direction: column;
   justify-content: center;

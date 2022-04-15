@@ -13,6 +13,16 @@ const GlobalStyle = createGlobalStyle`
     opacity: 1;
     box-shadow: 0px 0px 3px 3px #d1d1d1;
   }
+  h2 {
+    margin-top: 50px;
+    color: #9adcf0;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+  .semi-heading {
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
 
 `;
 

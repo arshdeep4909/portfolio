@@ -30,7 +30,7 @@ function Contact() {
   return (
     <ContactForm>
       <h2>Contact</h2>
-      <p className="contact-heading">Say Hello.</p>
+      <p className="semi-heading">Say Hello.</p>
       <ContactGrid>
         <form ref={form} onSubmit={sendEmail}>
           <input
@@ -65,19 +65,11 @@ function Contact() {
 }
 
 const ContactForm = styled.div`
-  max-width: 1600px;
+  max-width: 1400px;
   margin: auto;
   text-align: center;
   h2 {
-    margin-top: 50px;
-    color: #9adcf0;
-    text-transform: uppercase;
-    font-size: 2rem;
-  }
-  .contact-heading {
-    font-weight: bold;
-    font-size: 1.4rem;
-    margin-bottom: 25px;
+    margin-top: 6rem;
   }
 `;
 

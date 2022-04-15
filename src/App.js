@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import GlobalStyle from "./components/GlobalStyles";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <GlobalStyle />
       <Home />
       <About />
+      <Projects />
       <Contact />
     </div>
   );
