@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     box-shadow: 0px 0px 3px 3px #d1d1d1;
   }
   h2 {
-    margin-top: 50px;
+    margin-top: 100px;
     color: #9adcf0;
     text-transform: uppercase;
     font-size: 2rem;

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { FaAlignJustify } from "react-icons/fa";
 import NavList from "./NavList";
+import Link from "react-scroll/modules/components/Link";
 
 const Nav = () => {
   const [expandNav, setExpandNav] = useState(false);
@@ -14,14 +15,31 @@ const Nav = () => {
     <>
       <NavBar>
         <Logo>
-          <p href="#">DEV </p>
+          <Link to="home" spy={true} smooth={true}>
+            <p>DEV </p>
+          </Link>
         </Logo>
         <NavToggle>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Resume</li>
-          <li>Contact</li>
+          <li>
+            <Link activeClass="active" to="home" spy={true} smooth={true}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="about" spy={true} smooth={true}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="projects" spy={true} smooth={true}>
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" spy={true} smooth={true}>
+              Contact
+            </Link>
+          </li>
         </NavToggle>
         <ToggleButton onClick={() => ExpandNavHandler(expandNav)}>
           <FaAlignJustify />
@@ -39,10 +57,14 @@ const NavBar = styled.nav`
   width: 100%;
   display: flex;
   margin: 0;
-  height: 55px;
+  min-height: 55px;
+  height: 5vh;
   justify-content: space-between;
   align-items: center;
   background-color: #080808;
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+  }
 `;
 
 const Logo = styled.div`
@@ -89,13 +111,13 @@ const NavToggle = styled.ul`
   }
 `;
 const ToggleButton = styled.button`
+  display: none;
   position: absolute;
   top: 10px;
   right: 40px;
   color: white;
   border: none;
   font-size: 30px;
-  display: none;
   background: transparent;
   cursor: pointer;
   &:hover {

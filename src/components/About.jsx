@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { CgMail } from "react-icons/cg";
+import Link from "react-scroll/modules/components/Link";
+
 function About() {
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <h2>About</h2>
       <p className="semi-heading">Personal Info</p>
       <Info>
@@ -20,10 +22,12 @@ function About() {
             I would love to hear from you. A project, job opportunity or just a
             chat. Feel free to contact me.
           </p>
-          <button>
-            <CgMail className="mail-button" />
-            Get in Touch
-          </button>
+          <Link to="contact" spy={true} smooth={true}>
+            <button>
+              <CgMail className="mail-button" />
+              Get in Touch
+            </button>
+          </Link>
         </div>
         <Skills>
           <h3>Skills</h3>
@@ -45,7 +49,7 @@ function About() {
 const AboutSection = styled.div`
   max-width: 1400px;
   margin: auto;
-
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;

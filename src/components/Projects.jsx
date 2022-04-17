@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { AiOutlineEnter } from "react-icons/ai";
 function Projects() {
   return (
-    <ProjectSection>
+    <ProjectSection id="projects">
       <h2>projects</h2>
       <p className="semi-heading">My Work</p>
       <ProjectGrid>
@@ -54,8 +54,12 @@ function Projects() {
 
 const ProjectSection = styled.div`
   max-width: 1400px;
-  text-align: center;
   margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const ProjectGrid = styled.div`
@@ -63,7 +67,7 @@ const ProjectGrid = styled.div`
   text-align: center;
   margin: 4rem 4rem 0 4rem;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 60vh;
+  grid-template-rows: minmax(350px, 55vh);
   grid-gap: 20px;
   &:hover {
     cursor: pointer;

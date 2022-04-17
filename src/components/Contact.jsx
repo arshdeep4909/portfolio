@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import { FaAngleUp } from "react-icons/fa";
+import Link from "react-scroll/modules/components/Link";
 
 function Contact() {
   //Event Handler
@@ -29,7 +30,7 @@ function Contact() {
   };
 
   return (
-    <ContactForm>
+    <ContactForm id="contact">
       <h2>Contact</h2>
       <p className="semi-heading">Say Hello.</p>
       <ContactGrid>
@@ -65,12 +66,14 @@ function Contact() {
           <p>N2P 1C9</p>
         </div>
       </ContactGrid>
-      <div className="top-scroll">
-        <p>Back to Top </p>
-        <button className="ScrollButton">
-          <FaAngleUp />
-        </button>
-      </div>
+      <Link to="home" spy={true} smooth={true}>
+        <div className="top-scroll">
+          <p>Back to Top </p>
+          <button className="ScrollButton">
+            <FaAngleUp />
+          </button>
+        </div>
+      </Link>
     </ContactForm>
   );
 }
@@ -79,20 +82,32 @@ const ContactForm = styled.div`
   max-width: 1400px;
   margin: auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   h2 {
     margin-top: 6rem;
   }
   .top-scroll {
     display: flex;
     align-items: center;
-    position: absolute;
-    right: 25px;
-    margin-top: 30px;
+    position: relative;
+    left: 370px;
+    bottom: 10px;
+    margin-top: 10px;
     p {
       margin-right: 15px;
+      font-size: 13px;
     }
     button {
       margin: 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    @media screen and (max-width: 768px) {
+      left: 110px;
     }
   }
 `;
