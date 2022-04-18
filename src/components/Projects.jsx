@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import gaming from "../image/gaming.png";
 import capture from "../image/capture.png";
 import music from "../image/music.png";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineEnter } from "react-icons/ai";
+import todo from "../image/todo.png";
 function Projects() {
   return (
     <ProjectSection id="projects">
@@ -51,20 +51,30 @@ function Projects() {
                 target="_blank"
               >
                 <FaGithub />
-              </a>{" "}
+              </a>
             </button>
           </div>
         </PorjectBlock>
 
         <PorjectBlock>
-          <img src={gaming} alt="" />
+          <img src={todo} alt="" />
           <div className="project-description">
-            <p>Gaming Arcade</p>
+            <p>Todo App</p>
             <button>
-              <AiOutlineEnter />
+              <a
+                href="https://625ddbb08efb2300c40a02b9--vermillion-duckanoo-e69668.netlify.app/"
+                target="_blank"
+              >
+                <AiOutlineEnter />
+              </a>{" "}
             </button>
             <button>
-              <FaGithub />
+              <a
+                href="https://github.com/arshdeep4909/to-do.git"
+                target="_blank"
+              >
+                <FaGithub />
+              </a>{" "}
             </button>
           </div>
         </PorjectBlock>
@@ -105,6 +115,9 @@ const PorjectBlock = styled.div`
   overflow: hidden;
   border-radius: 10px;
   transition: all 0.5s ease;
+  p {
+    font-weight: bold;
+  }
   &:hover {
     background-image: linear-gradient(
       to right top,
@@ -136,21 +149,25 @@ const PorjectBlock = styled.div`
     text-align: center;
     color: white;
     text-align: center;
+    a {
+      color: white;
+      border: none;
+      border: 1px solid white;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+      padding: 5px;
+
+      &:hover {
+        background: white;
+        color: black;
+        border: 1px solid black;
+      }
+    }
     button {
       font-size: 20px;
       margin: 30px 10px;
       background: transparent;
-      color: white;
-      border: 1px solid white;
-      padding: 3px 5px;
-      border-radius: 3px;
-      transition: all 0.3s ease;
-      &:hover {
-        background: white;
-        color: black;
-        font-weight: bold;
-        cursor: pointer;
-      }
+      border: none;
     }
   }
   @media screen and (max-width: 768px) {

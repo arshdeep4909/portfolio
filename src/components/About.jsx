@@ -27,6 +27,10 @@ function About() {
               <CgMail className="mail-button" />
               Get in Touch
             </button>
+            <button>
+              <CgMail className="mail-button" />
+              Resume
+            </button>
           </Link>
         </div>
         <Skills>
