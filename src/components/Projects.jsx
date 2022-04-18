@@ -12,14 +12,24 @@ function Projects() {
       <p className="semi-heading">My Work</p>
       <ProjectGrid>
         <PorjectBlock>
-          <img src={gaming} alt="" />
+          <img src={capture} alt="" />
           <div className="project-description">
-            <p>Gaming Arcade</p>
+            <p>Business Website</p>
             <button>
-              <AiOutlineEnter />
+              <a
+                href="https://625d9ce094cca8025d06302c--cerulean-sunburst-0a32ee.netlify.app/"
+                target="_blank"
+              >
+                <AiOutlineEnter />
+              </a>
             </button>
             <button>
-              <FaGithub />
+              <a
+                href="https://github.com/arshdeep4909/capture.git"
+                target="_blank"
+              >
+                <FaGithub />
+              </a>
             </button>
           </div>
         </PorjectBlock>
@@ -28,17 +38,28 @@ function Projects() {
           <div className="project-description">
             <p>Music App</p>
             <button>
-              <AiOutlineEnter />
+              <a
+                href="https://625da86037f5c310f288224f--fanciful-unicorn-864891.netlify.app/"
+                target="_blank"
+              >
+                <AiOutlineEnter />
+              </a>
             </button>
             <button>
-              <FaGithub />
+              <a
+                href="https://github.com/arshdeep4909/the-music-player.git"
+                target="_blank"
+              >
+                <FaGithub />
+              </a>{" "}
             </button>
           </div>
         </PorjectBlock>
+
         <PorjectBlock>
-          <img src={capture} alt="" />
+          <img src={gaming} alt="" />
           <div className="project-description">
-            <p>Business Website</p>
+            <p>Gaming Arcade</p>
             <button>
               <AiOutlineEnter />
             </button>
