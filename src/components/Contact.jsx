@@ -93,7 +93,6 @@ const ContactForm = styled.div`
     display: flex;
     align-items: center;
     position: relative;
-    left: 370px;
     bottom: 10px;
     margin-top: 10px;
     p {
@@ -107,7 +106,7 @@ const ContactForm = styled.div`
       cursor: pointer;
     }
     @media screen and (max-width: 768px) {
-      left: 110px;
+      margin-top: 50px;
     }
   }
 `;

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { CgMail } from "react-icons/cg";
+import { AiOutlineFileWord } from "react-icons/ai";
 import Link from "react-scroll/modules/components/Link";
 
 function About() {
@@ -22,16 +23,20 @@ function About() {
             I would love to hear from you. A project, job opportunity or just a
             chat. Feel free to contact me.
           </p>
-          <Link to="contact" spy={true} smooth={true}>
-            <button>
-              <CgMail className="mail-button" />
-              Get in Touch
-            </button>
-            <button>
-              <CgMail className="mail-button" />
-              Resume
-            </button>
-          </Link>
+          <div className="about-buttons">
+            <Link to="contact" spy={true} smooth={true}>
+              <button>
+                <CgMail className="mail-button" />
+                Get in Touch
+              </button>
+            </Link>
+            <a href="#">
+              <button>
+                <AiOutlineFileWord className="mail-button" />
+                Resume
+              </button>
+            </a>
+          </div>
         </div>
         <Skills>
           <h3>Skills</h3>
@@ -96,6 +101,16 @@ const Info = styled.div`
         .mail-button {
           color: black;
         }
+      }
+    }
+    .about-buttons {
+      display: flex;
+      justify-content: space-around;
+      button {
+        margin: 20px;
+      }
+      a {
+        text-decoration: none;
       }
     }
   }
