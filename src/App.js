@@ -1,4 +1,4 @@
-import Nav from "./components/nav";
+import Nav from "./components/Nav";
 import Home from "./components/Home";
 import GlobalStyle from "./components/GlobalStyles";
 import About from "./components/About";

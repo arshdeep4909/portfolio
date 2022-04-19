@@ -30,12 +30,6 @@ function About() {
                 Get in Touch
               </button>
             </Link>
-            <a href="#">
-              <button>
-                <AiOutlineFileWord className="mail-button" />
-                Resume
-              </button>
-            </a>
           </div>
         </div>
         <Skills>
