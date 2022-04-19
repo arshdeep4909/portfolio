@@ -19,6 +19,7 @@ function Projects() {
               <a
                 href="https://625d9ce094cca8025d06302c--cerulean-sunburst-0a32ee.netlify.app/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <AiOutlineEnter />
               </a>
@@ -27,6 +28,7 @@ function Projects() {
               <a
                 href="https://github.com/arshdeep4909/capture.git"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub />
               </a>
@@ -41,6 +43,7 @@ function Projects() {
               <a
                 href="https://625da86037f5c310f288224f--fanciful-unicorn-864891.netlify.app/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <AiOutlineEnter />
               </a>
@@ -49,6 +52,7 @@ function Projects() {
               <a
                 href="https://github.com/arshdeep4909/the-music-player.git"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub />
               </a>
@@ -64,6 +68,7 @@ function Projects() {
               <a
                 href="https://625ddbb08efb2300c40a02b9--vermillion-duckanoo-e69668.netlify.app/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <AiOutlineEnter />
               </a>{" "}
@@ -72,6 +77,7 @@ function Projects() {
               <a
                 href="https://github.com/arshdeep4909/to-do.git"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub />
               </a>{" "}

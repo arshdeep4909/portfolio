@@ -14,10 +14,18 @@ const Home = () => {
           <h1>I am a Front-End Developer.</h1>
         </div>
         <Buttons>
-          <a href="https://github.com/arshdeep4909" target="_blank">
+          <a
+            href="https://github.com/arshdeep4909"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/a-singh-" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/a-singh-"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin />
           </a>
           <a href="mailto:arshdeep4909@gmail.com?subject=Hello%20Arshdeep!">
