@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { CgMail } from "react-icons/cg";
-import { AiOutlineFileWord } from "react-icons/ai";
 import Link from "react-scroll/modules/components/Link";
 
 function About() {
