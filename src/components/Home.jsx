@@ -55,6 +55,10 @@ const Main = styled.div`
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   padding-top: 4rem;
+  background-image: url(${background});
+  background-size: cover;
+  background-repeat: no-repeat;
+
   .hello {
     color: #9adcf0;
   }
@@ -66,9 +70,7 @@ const Main = styled.div`
     font-size: 2.5rem;
     padding: 10px;
   }
-  background-image: url(${background});
-  background-size: cover;
-  background-repeat: no-repeat;
+
   @media screen and (max-width: 768px) {
     .margin {
       margin: 2rem;
