@@ -1,10 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import capture from "../image/capture.png";
-import music from "../image/music.png";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineEnter } from "react-icons/ai";
-import todo from "../image/todo.png";
 function Projects() {
   return (
     <ProjectSection id="projects">

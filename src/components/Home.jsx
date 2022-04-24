@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { FaGithub, FaLinkedin, FaAngleDown } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import background from "../image/background.png";
 import Link from "react-scroll/modules/components/Link";
 
 const Home = () => {
@@ -55,7 +54,7 @@ const Main = styled.div`
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   padding-top: 4rem;
-  background-image: url(${background});
+  background-image: url("image/background.png");
   background-size: cover;
   background-repeat: no-repeat;
 
