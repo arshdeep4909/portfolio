@@ -50,8 +50,11 @@ function Contact() {
             placeholder="Message..."
             name="message"
           ></textarea>
-          <button type="submit" value="Send">
-            {" "}
+          <button
+            type="submit"
+            value="Send"
+            onClick={(e) => e.alert("message sent")}
+          >
             Send
           </button>
         </form>

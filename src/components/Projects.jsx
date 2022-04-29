@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineEnter } from "react-icons/ai";
+
 function Projects() {
   return (
     <ProjectSection id="projects">
@@ -32,6 +33,31 @@ function Projects() {
             </button>
           </div>
         </PorjectBlock>
+
+        <PorjectBlock>
+          <img src="image/gaming.png" alt="project-cover" />
+          <div className="project-description">
+            <p>Gaming Arcade</p>
+            <button>
+              <a
+                href="https://incredible-malasada-c96737.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiOutlineEnter />
+              </a>{" "}
+            </button>
+            <button>
+              <a
+                href="https://github.com/arshdeep4909/gaming-arcade.git"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>{" "}
+            </button>
+          </div>
+        </PorjectBlock>
         <PorjectBlock>
           <img src="image/music.png" alt="project-cover" />
           <div className="project-description">
@@ -53,31 +79,6 @@ function Projects() {
               >
                 <FaGithub />
               </a>
-            </button>
-          </div>
-        </PorjectBlock>
-
-        <PorjectBlock>
-          <img src="image/todo.png" alt="project-cover" />
-          <div className="project-description">
-            <p>Todo App</p>
-            <button>
-              <a
-                href="https://625ddbb08efb2300c40a02b9--vermillion-duckanoo-e69668.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <AiOutlineEnter />
-              </a>{" "}
-            </button>
-            <button>
-              <a
-                href="https://github.com/arshdeep4909/to-do.git"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaGithub />
-              </a>{" "}
             </button>
           </div>
         </PorjectBlock>
