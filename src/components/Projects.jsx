@@ -9,7 +9,7 @@ function Projects() {
       <p className="semi-heading">My Work</p>
       <ProjectGrid>
         <PorjectBlock>
-          <img src="image/capture.png" />
+          <img src="image/capture.png" alt="project-cover" />
           <div className="project-description">
             <p>Business Website</p>
             <button>
@@ -33,7 +33,7 @@ function Projects() {
           </div>
         </PorjectBlock>
         <PorjectBlock>
-          <img src="image/music.png" alt="" />
+          <img src="image/music.png" alt="project-cover" />
           <div className="project-description">
             <p>Music App</p>
             <button>
@@ -58,7 +58,7 @@ function Projects() {
         </PorjectBlock>
 
         <PorjectBlock>
-          <img src="image/todo.png" alt="" />
+          <img src="image/todo.png" alt="project-cover" />
           <div className="project-description">
             <p>Todo App</p>
             <button>

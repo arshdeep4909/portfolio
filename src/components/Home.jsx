@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FaGithub, FaLinkedin, FaAngleDown } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import Link from "react-scroll/modules/components/Link";
-import TxtRotate from "./Script";
+import TxtRotate from "../data/Script.js";
 
 const Home = () => {
   return (
