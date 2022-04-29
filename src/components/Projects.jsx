@@ -9,7 +9,7 @@ function Projects() {
       <p className="semi-heading">My Work</p>
       <ProjectGrid>
         <PorjectBlock>
-          <img src="image/capture.png" alt="capture-project-background" />
+          <img src="image/capture.png" />
           <div className="project-description">
             <p>Business Website</p>
             <button>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FaGithub, FaLinkedin, FaAngleDown } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import Link from "react-scroll/modules/components/Link";
+import TxtRotate from "./Script";
 
 const Home = () => {
   return (
@@ -10,7 +11,13 @@ const Home = () => {
         <div className="margin">
           <p className="hello"> ── HELLO THERE</p>
           <h1>I am Arshdeep Singh.</h1>
-          <h1>I am a Front-End Developer.</h1>
+          <h1>
+            <span
+              className="txt-rotate"
+              data-period="2000"
+              data-rotate='[ "Front-End Dev.", "Eager to Learn.", "Problem Solver."]'
+            ></span>
+          </h1>
         </div>
         <Buttons>
           <a
@@ -47,6 +54,7 @@ const Home = () => {
 
 const Main = styled.div`
   display: flex;
+  text-align: center;
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
@@ -69,6 +77,11 @@ const Main = styled.div`
     font-size: 2.5rem;
     padding: 10px;
   }
+  .txt-rotate {
+    /* color: #9adcf0; */
+    font-size: 32px;
+    font-weight: lighter;
+  }
 
   @media screen and (max-width: 768px) {
     .margin {
@@ -76,6 +89,17 @@ const Main = styled.div`
     }
     p {
       text-align: inherit;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .margin {
+      margin: 2rem;
+    }
+    p {
+      text-align: inherit;
+    }
+    .txt-rotate {
+      font-size: 1.5rem;
     }
   }
 `;
